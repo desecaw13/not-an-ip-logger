@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>
+		$.getJSON('https://api.ipify.org?format=jsonp&callback=?', function(data) {
+			$("#ip").html(data.ip);
+		});
+	</script>
+</head>
+<body>
+	<center>
+		<p>Logging ip address...</p>
+		<p id="ip"></p>
+	</center>
+</body>
+</html>
